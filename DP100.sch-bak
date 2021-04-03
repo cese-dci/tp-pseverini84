@@ -290,20 +290,6 @@ F 3 "" H 8250 5650 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x06_Odd_Even J3
-U 1 1 60695E6A
-P 9550 5350
-AR Path="/60695E6A" Ref="J3"  Part="1" 
-AR Path="/60727ABB/60695E6A" Ref="J?"  Part="1" 
-F 0 "J3" H 9600 5767 50  0000 C CNN
-F 1 "Conn_02x06_Odd_Even" H 9600 5676 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 9550 5350 50  0001 C CNN
-F 3 "~" H 9550 5350 50  0001 C CNN
-F 4 "855-M20-9760642" H 9550 5350 50  0001 C CNN "Mouser"
-	1    9550 5350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x06 J2
 U 1 1 60695E71
 P 8450 5350
@@ -1614,19 +1600,19 @@ Text HLabel 7400 3150 0    50   Input ~ 0
 filterOut-
 Text HLabel 5000 5850 1    50   BiDi ~ 0
 SCL
-Text HLabel 8250 5350 0    50   BiDi ~ 0
+Text HLabel 8250 5250 0    50   BiDi ~ 0
 SCL
 Text HLabel 5000 5950 3    50   BiDi ~ 0
 SDA
-Text HLabel 8250 5250 0    50   BiDi ~ 0
+Text HLabel 8250 5150 0    50   BiDi ~ 0
 SDA
 Text HLabel 6450 5450 2    50   Output ~ 0
 CLK
-Text HLabel 8250 5450 0    50   Input ~ 0
+Text HLabel 8250 5350 0    50   Input ~ 0
 CLK
-Text HLabel 8250 5150 0    50   Output ~ 0
+Text HLabel 8250 5450 0    50   Output ~ 0
 PWDN
-Text HLabel 9850 5650 2    50   Output ~ 0
+Text HLabel 9350 5650 0    50   Output ~ 0
 Spam
 Text HLabel 9850 5150 2    50   Input ~ 0
 D1
@@ -1638,7 +1624,7 @@ Text HLabel 9850 5450 2    50   Input ~ 0
 D7
 Text HLabel 9850 5550 2    50   Input ~ 0
 D9
-Text HLabel 9350 5650 0    50   Input ~ 0
+Text HLabel 9850 5650 2    50   Input ~ 0
 OR
 Text HLabel 9350 5550 0    50   Input ~ 0
 D8
@@ -1724,4 +1710,18 @@ Connection ~ 6800 2200
 Wire Wire Line
 	6800 2200 7400 2200
 Connection ~ 6800 2500
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J3
+U 1 1 60695E6A
+P 9550 5350
+AR Path="/60695E6A" Ref="J3"  Part="1" 
+AR Path="/60727ABB/60695E6A" Ref="J?"  Part="1" 
+F 0 "J3" H 9600 5767 50  0000 C CNN
+F 1 "Conn_02x06_Odd_Even" H 9600 5676 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 9550 5350 50  0001 C CNN
+F 3 "~" H 9550 5350 50  0001 C CNN
+F 4 "855-M20-9760642" H 9550 5350 50  0001 C CNN "Mouser"
+	1    9550 5350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
