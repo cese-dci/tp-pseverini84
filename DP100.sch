@@ -276,24 +276,6 @@ F 3 "~" H 2050 5550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Connection ~ 2050 5550
-Text GLabel 9850 5150 2    50   Input ~ 0
-D1
-Text GLabel 9350 5350 0    50   Input ~ 0
-D4
-Text GLabel 9850 5350 2    50   Input ~ 0
-D5
-Text GLabel 9850 5250 2    50   Input ~ 0
-D3
-Text GLabel 9350 5250 0    50   Input ~ 0
-D2
-Text GLabel 9350 5450 0    50   Input ~ 0
-D6
-Text GLabel 9850 5450 2    50   Input ~ 0
-D7
-Text GLabel 9350 5550 0    50   Input ~ 0
-D8
-Text GLabel 9850 5550 2    50   Input ~ 0
-D9
 $Comp
 L power:GND #PWR035
 U 1 1 60695E5E
@@ -307,16 +289,6 @@ F 3 "" H 8250 5650 50  0001 C CNN
 	1    8250 5650
 	-1   0    0    -1  
 $EndComp
-Text GLabel 8250 5150 0    50   Output ~ 0
-PWDN
-Text GLabel 9850 5650 2    50   Output ~ 0
-Spam
-Text GLabel 9350 5650 0    50   Input ~ 0
-OR
-Text GLabel 8250 5350 0    50   BiDi ~ 0
-SCL
-Text GLabel 8250 5250 0    50   BiDi ~ 0
-SDA
 $Comp
 L Connector_Generic:Conn_02x06_Odd_Even J3
 U 1 1 60695E6A
@@ -358,8 +330,6 @@ F 3 "" H 8250 5550 50  0001 C CNN
 	1    8250 5550
 	0    -1   -1   0   
 $EndComp
-Text GLabel 8250 5450 0    50   Input ~ 0
-CLK
 Wire Notes Line
 	10300 4550 10300 6050
 Wire Notes Line
@@ -370,8 +340,6 @@ Wire Notes Line
 	7600 4550 10300 4550
 Text Notes 7750 4850 0    157  ~ 0
 Conectores
-Text GLabel 9350 5150 0    50   Input ~ 0
-D0
 $Comp
 L Device:C C?
 U 1 1 606B5639
@@ -402,10 +370,6 @@ F 4 "80-C0603C104Z3V" V 6500 3700 50  0001 C CNN "Mouser"
 $EndComp
 Text Notes 9650 2050 0    50   ~ 0
 AD9283\n\n1.024 Vpp\n\n255 - 0.512V - 1111 1111\n • ••\n • ••\n128 - 0.002V - 1000 0000\n127 - 0.002V - 0111 1111\n • ••\n • ••\n0 - 0.512V - 0000 0000
-Text GLabel 7400 3050 0    50   Input ~ 0
-filterOut+
-Text GLabel 7400 3150 0    50   Input ~ 0
-filterOut-
 $Comp
 L power:GND #PWR?
 U 1 1 606B5673
@@ -459,15 +423,15 @@ Wire Notes Line
 $Comp
 L Device:C C?
 U 1 1 606CC308
-P 4050 1800
+P 3700 1800
 AR Path="/606A8BD9/606CC308" Ref="C?"  Part="1" 
 AR Path="/606CC308" Ref="C16"  Part="1" 
-F 0 "C16" H 4165 1846 50  0000 L CNN
-F 1 "100nF" H 4165 1755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4088 1650 50  0001 C CNN
-F 3 "~" H 4050 1800 50  0001 C CNN
-F 4 "80-C0603C104Z3V" H 4050 1800 50  0001 C CNN "Mouser"
-	1    4050 1800
+F 0 "C16" H 3815 1846 50  0000 L CNN
+F 1 "100nF" H 3815 1755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3738 1650 50  0001 C CNN
+F 3 "~" H 3700 1800 50  0001 C CNN
+F 4 "80-C0603C104Z3V" H 3700 1800 50  0001 C CNN "Mouser"
+	1    3700 1800
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -658,10 +622,6 @@ F 4 "710-885012006033" H 1700 3100 50  0001 C CNN "Mouser"
 	1    1700 3100
 	1    0    0    -1  
 $EndComp
-Text GLabel 1400 2950 0    50   Input ~ 0
-filterIn+
-Text GLabel 1400 3250 0    50   Input ~ 0
-filterIn-
 Connection ~ 1700 2950
 Connection ~ 1700 3250
 Wire Wire Line
@@ -720,80 +680,74 @@ Wire Wire Line
 	1850 1850 1650 1850
 Wire Wire Line
 	1650 1850 1650 1650
-Text GLabel 3050 1450 2    50   Output ~ 0
-filterIn+
-Text GLabel 3050 1850 2    50   Output ~ 0
-filterIn-
-Connection ~ 3700 1650
+Connection ~ 3350 1650
 $Comp
 L power:GND #PWR?
 U 1 1 606CC3A1
-P 3700 1950
+P 3350 1950
 AR Path="/606A8BD9/606CC3A1" Ref="#PWR?"  Part="1" 
 AR Path="/606CC3A1" Ref="#PWR013"  Part="1" 
-F 0 "#PWR013" H 3700 1700 50  0001 C CNN
-F 1 "GND" H 3705 1777 50  0000 C CNN
-F 2 "" H 3700 1950 50  0001 C CNN
-F 3 "" H 3700 1950 50  0001 C CNN
-	1    3700 1950
+F 0 "#PWR013" H 3350 1700 50  0001 C CNN
+F 1 "GND" H 3355 1777 50  0000 C CNN
+F 2 "" H 3350 1950 50  0001 C CNN
+F 3 "" H 3350 1950 50  0001 C CNN
+	1    3350 1950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_US R?
 U 1 1 606CC3A8
-P 3700 1800
+P 3350 1800
 AR Path="/606A8BD9/606CC3A8" Ref="R?"  Part="1" 
 AR Path="/606CC3A8" Ref="R4"  Part="1" 
-F 0 "R4" H 3768 1846 50  0000 L CNN
-F 1 "1K" H 3768 1755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3740 1790 50  0001 C CNN
-F 3 "~" H 3700 1800 50  0001 C CNN
-F 4 "71-CRCW06031K00FKEAC" H 3700 1800 50  0001 C CNN "Mouser"
-	1    3700 1800
+F 0 "R4" H 3418 1846 50  0000 L CNN
+F 1 "1K" H 3418 1755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3390 1790 50  0001 C CNN
+F 3 "~" H 3350 1800 50  0001 C CNN
+F 4 "71-CRCW06031K00FKEAC" H 3350 1800 50  0001 C CNN "Mouser"
+	1    3350 1800
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_US R?
 U 1 1 606CC3AF
-P 3700 1500
+P 3350 1500
 AR Path="/606A8BD9/606CC3AF" Ref="R?"  Part="1" 
 AR Path="/606CC3AF" Ref="R3"  Part="1" 
-F 0 "R3" H 3768 1546 50  0000 L CNN
-F 1 "1K" H 3768 1455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3740 1490 50  0001 C CNN
-F 3 "~" H 3700 1500 50  0001 C CNN
-F 4 "71-CRCW06031K00FKEAC" H 3700 1500 50  0001 C CNN "Mouser"
-	1    3700 1500
+F 0 "R3" H 3418 1546 50  0000 L CNN
+F 1 "1K" H 3418 1455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3390 1490 50  0001 C CNN
+F 3 "~" H 3350 1500 50  0001 C CNN
+F 4 "71-CRCW06031K00FKEAC" H 3350 1500 50  0001 C CNN "Mouser"
+	1    3350 1500
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:+3.3VA #PWR?
 U 1 1 606CC3B5
-P 3700 1350
+P 3350 1350
 AR Path="/606A8BD9/606CC3B5" Ref="#PWR?"  Part="1" 
 AR Path="/606CC3B5" Ref="#PWR012"  Part="1" 
-F 0 "#PWR012" H 3700 1200 50  0001 C CNN
-F 1 "+3.3VA" H 3715 1523 50  0000 C CNN
-F 2 "" H 3700 1350 50  0001 C CNN
-F 3 "" H 3700 1350 50  0001 C CNN
-	1    3700 1350
+F 0 "#PWR012" H 3350 1200 50  0001 C CNN
+F 1 "+3.3VA" H 3365 1523 50  0000 C CNN
+F 2 "" H 3350 1350 50  0001 C CNN
+F 3 "" H 3350 1350 50  0001 C CNN
+	1    3350 1350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2750 1650 3700 1650
-Wire Wire Line
-	3700 1650 4050 1650
+	3350 1650 3700 1650
 $Comp
 L power:GND #PWR?
 U 1 1 606CC3BD
-P 4050 1950
+P 3700 1950
 AR Path="/606A8BD9/606CC3BD" Ref="#PWR?"  Part="1" 
 AR Path="/606CC3BD" Ref="#PWR015"  Part="1" 
-F 0 "#PWR015" H 4050 1700 50  0001 C CNN
-F 1 "GND" H 4055 1777 50  0000 C CNN
-F 2 "" H 4050 1950 50  0001 C CNN
-F 3 "" H 4050 1950 50  0001 C CNN
-	1    4050 1950
+F 0 "#PWR015" H 3700 1700 50  0001 C CNN
+F 1 "GND" H 3705 1777 50  0000 C CNN
+F 2 "" H 3700 1950 50  0001 C CNN
+F 3 "" H 3700 1950 50  0001 C CNN
+	1    3700 1950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -810,44 +764,12 @@ F 4 "937-MABA-011038" H 2550 1650 50  0001 C CNN "Mouser"
 	1    2550 1650
 	1    0    0    -1  
 $EndComp
-Text GLabel 3650 3400 3    50   Input ~ 0
-filterOut-
 Wire Wire Line
 	3650 3250 3650 3400
 Wire Wire Line
 	3650 2950 3650 2800
 Text Notes 900  1100 0    157  ~ 0
 Filtro
-Text GLabel 3650 2800 1    50   Input ~ 0
-filterOut+
-$Comp
-L Device:R_US R?
-U 1 1 606CC407
-P 2900 1450
-AR Path="/606A8BD9/606CC407" Ref="R?"  Part="1" 
-AR Path="/606CC407" Ref="R1"  Part="1" 
-F 0 "R1" V 3100 1350 50  0000 L CNN
-F 1 "0R" V 3000 1350 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2940 1440 50  0001 C CNN
-F 3 "~" H 2900 1450 50  0001 C CNN
-F 4 "603-AC0603JR-130RL" V 2900 1450 50  0001 C CNN "Mouser"
-	1    2900 1450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 606CC40E
-P 2900 1850
-AR Path="/606A8BD9/606CC40E" Ref="R?"  Part="1" 
-AR Path="/606CC40E" Ref="R2"  Part="1" 
-F 0 "R2" V 2800 1750 50  0000 L CNN
-F 1 "0R" V 2700 1750 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2940 1840 50  0001 C CNN
-F 3 "~" H 2900 1850 50  0001 C CNN
-F 4 "603-AC0603JR-130RL" V 2900 1850 50  0001 C CNN "Mouser"
-	1    2900 1850
-	0    -1   -1   0   
-$EndComp
 NoConn ~ 6150 5850
 NoConn ~ 6150 5650
 Text Notes 4400 4750 0    157  ~ 0
@@ -874,10 +796,6 @@ F 4 "815-ABLS7M225MHZD2YT" H 5000 5350 50  0001 C CNN "Mouser"
 	1    5000 5350
 	1    0    0    -1  
 $EndComp
-Text GLabel 5000 5950 3    50   BiDi ~ 0
-SDA
-Text GLabel 5000 5850 1    50   BiDi ~ 0
-SCL
 $Comp
 L power:+3.3V #PWR017
 U 1 1 606BD29C
@@ -1018,8 +936,6 @@ F 4 "603-AC0603JR-130RL" V 6300 5450 50  0001 C CNN "Mouser"
 	1    6300 5450
 	0    -1   -1   0   
 $EndComp
-Text GLabel 6450 5450 2    50   Output ~ 0
-CLK
 $Comp
 L power:PWR_FLAG #FLG04
 U 1 1 60692CBC
@@ -1340,20 +1256,6 @@ F 4 "71-CRCW0603-10K-E3" H 6350 2700 50  0001 C CNN "Mouser"
 	1    6350 2700
 	0    -1   1    0   
 $EndComp
-$Comp
-L Transistor_FET:2N7002 Q?
-U 1 1 606B5718
-P 6700 2700
-AR Path="/606A8BD9/606B5718" Ref="Q?"  Part="1" 
-AR Path="/606B5718" Ref="Q1"  Part="1" 
-F 0 "Q1" H 6900 2750 50  0000 L CNN
-F 1 "2N7002" H 6900 2600 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6900 2625 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 6700 2700 50  0001 L CNN
-F 4 "512-2N7002" H 6700 2700 50  0001 C CNN "Mouser"
-	1    6700 2700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6500 2900 6800 2900
 $Comp
@@ -1370,8 +1272,6 @@ F 4 "603-RC0603FR-07330KL" H 6350 2900 50  0001 C CNN "Mouser"
 	1    6350 2900
 	0    -1   1    0   
 $EndComp
-Text GLabel 6150 2700 0    50   Input ~ 0
-Spam
 $Comp
 L power:GND #PWR?
 U 1 1 606B56D6
@@ -1443,35 +1343,34 @@ F 4 "80-C0603C104Z3V" H 6200 2350 50  0001 C CNN "Mouser"
 	1    6200 2350
 	-1   0    0    -1  
 $EndComp
-Connection ~ 6800 2900
 Wire Wire Line
 	6200 2700 6200 2900
 Connection ~ 6200 2700
 $Comp
 L Device:R_US R?
 U 1 1 606B56CA
-P 7050 1950
+P 6950 1950
 AR Path="/606A8BD9/606B56CA" Ref="R?"  Part="1" 
 AR Path="/606B56CA" Ref="R17"  Part="1" 
-F 0 "R17" V 7150 2000 50  0000 L CNN
-F 1 "10K" V 7250 2000 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7090 1940 50  0001 C CNN
-F 3 "~" H 7050 1950 50  0001 C CNN
-F 4 "71-CRCW0603-10K-E3" H 7050 1950 50  0001 C CNN "Mouser"
-	1    7050 1950
+F 0 "R17" V 7050 2000 50  0000 L CNN
+F 1 "10K" V 7150 2000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6990 1940 50  0001 C CNN
+F 3 "~" H 6950 1950 50  0001 C CNN
+F 4 "71-CRCW0603-10K-E3" H 6950 1950 50  0001 C CNN "Mouser"
+	1    6950 1950
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 606B56BC
-P 6900 1950
+P 6800 1950
 AR Path="/606A8BD9/606B56BC" Ref="#PWR?"  Part="1" 
 AR Path="/606B56BC" Ref="#PWR028"  Part="1" 
-F 0 "#PWR028" H 6900 1700 50  0001 C CNN
-F 1 "GND" H 6905 1777 50  0000 C CNN
-F 2 "" H 6900 1950 50  0001 C CNN
-F 3 "" H 6900 1950 50  0001 C CNN
-	1    6900 1950
+F 0 "#PWR028" H 6800 1700 50  0001 C CNN
+F 1 "GND" H 6805 1777 50  0000 C CNN
+F 2 "" H 6800 1950 50  0001 C CNN
+F 3 "" H 6800 1950 50  0001 C CNN
+	1    6800 1950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1493,10 +1392,6 @@ F 3 "" H 8500 3900 50  0001 C CNN
 $EndComp
 NoConn ~ 7400 2800
 NoConn ~ 7400 2700
-Text GLabel 9200 2900 2    50   Output ~ 0
-D2
-Text GLabel 9200 2800 2    50   Output ~ 0
-D3
 $Comp
 L power:GND #PWR?
 U 1 1 606B570F
@@ -1590,28 +1485,6 @@ F 3 "" H 8150 1500 50  0001 C CNN
 	1    8150 1500
 	1    0    0    -1  
 $EndComp
-Text GLabel 9200 3400 2    50   Input ~ 0
-PWDN
-Text GLabel 9200 3300 2    50   Input ~ 0
-CLK
-Text GLabel 9200 2000 2    50   Output ~ 0
-OR
-Text GLabel 9200 3100 2    50   Output ~ 0
-D0
-Text GLabel 9200 2200 2    50   Output ~ 0
-D9
-Text GLabel 9200 2300 2    50   Output ~ 0
-D8
-Text GLabel 9200 2400 2    50   Output ~ 0
-D7
-Text GLabel 9200 2500 2    50   Output ~ 0
-D6
-Text GLabel 9200 2600 2    50   Output ~ 0
-D5
-Text GLabel 9200 2700 2    50   Output ~ 0
-D4
-Text GLabel 9200 3000 2    50   Output ~ 0
-D1
 Wire Wire Line
 	7400 3500 7400 3700
 Connection ~ 7100 3700
@@ -1634,32 +1507,41 @@ Wire Wire Line
 Connection ~ 7100 3400
 Wire Wire Line
 	7100 3700 7400 3700
-Wire Wire Line
-	7400 2500 6800 2500
-Connection ~ 6800 2500
-Wire Wire Line
-	6800 2200 7400 2200
 $Comp
 L Device:C C?
 U 1 1 606B564E
-P 7050 1750
+P 6950 1750
 AR Path="/606A8BD9/606B564E" Ref="C?"  Part="1" 
 AR Path="/606B564E" Ref="C25"  Part="1" 
-F 0 "C25" V 6800 1650 50  0000 L CNN
-F 1 "100pF" V 6900 1650 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7088 1600 50  0001 C CNN
-F 3 "~" H 7050 1750 50  0001 C CNN
-F 4 "80-C0603C101K1HACTU" H 7050 1750 50  0001 C CNN "Mouser"
-	1    7050 1750
+F 0 "C25" V 6700 1650 50  0000 L CNN
+F 1 "100pF" V 6800 1650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6988 1600 50  0001 C CNN
+F 3 "~" H 6950 1750 50  0001 C CNN
+F 4 "80-C0603C101K1HACTU" H 6950 1750 50  0001 C CNN "Mouser"
+	1    6950 1750
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_US R?
 U 1 1 606B56C3
-P 7400 1500
+P 7250 1950
 AR Path="/606A8BD9/606B56C3" Ref="R?"  Part="1" 
 AR Path="/606B56C3" Ref="R15"  Part="1" 
-F 0 "R15" H 7468 1546 50  0000 L CNN
+F 0 "R15" V 7350 1950 50  0000 L CNN
+F 1 "10K" V 7450 1950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7290 1940 50  0001 C CNN
+F 3 "~" H 7250 1950 50  0001 C CNN
+F 4 "71-CRCW0603-10K-E3" H 7250 1950 50  0001 C CNN "Mouser"
+	1    7250 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 606B56DE
+P 7400 1500
+AR Path="/606A8BD9/606B56DE" Ref="R?"  Part="1" 
+AR Path="/606B56DE" Ref="R16"  Part="1" 
+F 0 "R16" H 7468 1546 50  0000 L CNN
 F 1 "10K" H 7468 1455 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7440 1490 50  0001 C CNN
 F 3 "~" H 7400 1500 50  0001 C CNN
@@ -1667,44 +1549,11 @@ F 4 "71-CRCW0603-10K-E3" H 7400 1500 50  0001 C CNN "Mouser"
 	1    7400 1500
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3.3VA #PWR?
-U 1 1 606B56D0
-P 7400 1350
-AR Path="/606A8BD9/606B56D0" Ref="#PWR?"  Part="1" 
-AR Path="/606B56D0" Ref="#PWR027"  Part="1" 
-F 0 "#PWR027" H 7400 1200 50  0001 C CNN
-F 1 "+3.3VA" H 7415 1523 50  0000 C CNN
-F 2 "" H 7400 1350 50  0001 C CNN
-F 3 "" H 7400 1350 50  0001 C CNN
-	1    7400 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 606B56DE
-P 7400 1800
-AR Path="/606A8BD9/606B56DE" Ref="R?"  Part="1" 
-AR Path="/606B56DE" Ref="R16"  Part="1" 
-F 0 "R16" H 7468 1846 50  0000 L CNN
-F 1 "10K" H 7468 1755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7440 1790 50  0001 C CNN
-F 3 "~" H 7400 1800 50  0001 C CNN
-F 4 "71-CRCW0603-10K-E3" H 7400 1800 50  0001 C CNN "Mouser"
-	1    7400 1800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	7400 1950 7200 1950
-Wire Wire Line
-	7200 1750 7200 1950
-Connection ~ 7200 1950
-Wire Wire Line
-	6900 1750 6900 1950
-Connection ~ 6900 1950
+	6800 1750 6800 1950
+Connection ~ 6800 1950
 Connection ~ 8050 3900
 Connection ~ 8150 1500
-Connection ~ 7400 1950
 Connection ~ 8500 1500
 $Comp
 L AD9215BRUZ:AD9215BRUZ U?
@@ -1733,12 +1582,6 @@ Wire Wire Line
 Wire Wire Line
 	6200 2500 6500 2500
 Connection ~ 6200 2500
-Connection ~ 6500 2500
-Wire Wire Line
-	6500 2500 6800 2500
-Wire Wire Line
-	6500 2200 6800 2200
-Connection ~ 6800 2200
 Wire Notes Line
 	5600 900  10900 900 
 Wire Notes Line
@@ -1753,4 +1596,132 @@ Wire Notes Line
 	4700 850  4700 4350
 Wire Notes Line
 	850  850  850  4350
+Text HLabel 1400 2950 0    50   Input ~ 0
+filterIn+
+Text HLabel 1400 3250 0    50   Input ~ 0
+filterIn-
+Text HLabel 2750 1450 2    50   Output ~ 0
+filterIn+
+Text HLabel 2750 1850 2    50   Output ~ 0
+filterIn-
+Text HLabel 3650 2800 1    50   Output ~ 0
+filterOut+
+Text HLabel 3650 3400 3    50   Output ~ 0
+filterOut-
+Text HLabel 7400 3050 0    50   Input ~ 0
+filterOut+
+Text HLabel 7400 3150 0    50   Input ~ 0
+filterOut-
+Text HLabel 5000 5850 1    50   BiDi ~ 0
+SCL
+Text HLabel 8250 5250 0    50   BiDi ~ 0
+SCL
+Text HLabel 5000 5950 3    50   BiDi ~ 0
+SDA
+Text HLabel 8250 5150 0    50   BiDi ~ 0
+SDA
+Text HLabel 6450 5450 2    50   Output ~ 0
+CLK
+Text HLabel 8250 5350 0    50   Input ~ 0
+CLK
+Text HLabel 8250 5450 0    50   Output ~ 0
+PWDN
+Text HLabel 9850 5650 2    50   Output ~ 0
+Spam
+Text HLabel 9850 5150 2    50   Input ~ 0
+D1
+Text HLabel 9850 5250 2    50   Input ~ 0
+D3
+Text HLabel 9850 5350 2    50   Input ~ 0
+D5
+Text HLabel 9850 5450 2    50   Input ~ 0
+D7
+Text HLabel 9850 5550 2    50   Input ~ 0
+D9
+Text HLabel 9350 5650 0    50   Input ~ 0
+OR
+Text HLabel 9350 5550 0    50   Input ~ 0
+D8
+Text HLabel 9350 5450 0    50   Input ~ 0
+D6
+Text HLabel 9350 5350 0    50   Input ~ 0
+D4
+Text HLabel 9350 5250 0    50   Input ~ 0
+D2
+Text HLabel 9350 5150 0    50   Input ~ 0
+D0
+Text HLabel 9200 3300 2    50   Input ~ 0
+CLK
+Text HLabel 9200 3400 2    50   Input ~ 0
+PWDN
+Wire Wire Line
+	2750 1650 3350 1650
+Text HLabel 6150 2700 0    50   Input ~ 0
+Spam
+Text HLabel 9200 2200 2    50   Output ~ 0
+D9
+Text HLabel 9200 2000 2    50   Output ~ 0
+OR
+Text HLabel 9200 2300 2    50   Output ~ 0
+D8
+Text HLabel 9200 2400 2    50   Output ~ 0
+D7
+Text HLabel 9200 2500 2    50   Output ~ 0
+D6
+Text HLabel 9200 2600 2    50   Output ~ 0
+D5
+Text HLabel 9200 2700 2    50   Output ~ 0
+D4
+Text HLabel 9200 2800 2    50   Output ~ 0
+D3
+Text HLabel 9200 2900 2    50   Output ~ 0
+D2
+Text HLabel 9200 3000 2    50   Output ~ 0
+D1
+Text HLabel 9200 3100 2    50   Output ~ 0
+D0
+Connection ~ 7400 1950
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 606B56D0
+P 7400 1350
+AR Path="/606A8BD9/606B56D0" Ref="#PWR?"  Part="1" 
+AR Path="/606B56D0" Ref="#PWR027"  Part="1" 
+F 0 "#PWR027" H 7400 1200 50  0001 C CNN
+F 1 "+3.3VA" H 7415 1523 50  0000 C CNN
+F 2 "" H 7400 1350 50  0001 C CNN
+F 3 "" H 7400 1350 50  0001 C CNN
+	1    7400 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 1650 7400 1750
+Wire Wire Line
+	7100 1750 7400 1750
+Connection ~ 7400 1750
+Wire Wire Line
+	7400 1750 7400 1950
+Wire Wire Line
+	6500 2200 6800 2200
+Wire Wire Line
+	7400 2500 6800 2500
+Connection ~ 6800 2900
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 606B5718
+P 6700 2700
+AR Path="/606A8BD9/606B5718" Ref="Q?"  Part="1" 
+AR Path="/606B5718" Ref="Q1"  Part="1" 
+F 0 "Q1" H 6900 2750 50  0000 L CNN
+F 1 "2N7002" H 6900 2600 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6900 2625 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 6700 2700 50  0001 L CNN
+F 4 "512-2N7002" H 6700 2700 50  0001 C CNN "Mouser"
+	1    6700 2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 6800 2200
+Wire Wire Line
+	6800 2200 7400 2200
+Connection ~ 6800 2500
 $EndSCHEMATC
