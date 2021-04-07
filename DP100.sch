@@ -1582,90 +1582,8 @@ Wire Notes Line
 	4700 850  4700 4350
 Wire Notes Line
 	850  850  850  4350
-Text HLabel 1400 2950 0    50   Input ~ 0
-filterIn+
-Text HLabel 1400 3250 0    50   Input ~ 0
-filterIn-
-Text HLabel 2750 1450 2    50   Output ~ 0
-filterIn+
-Text HLabel 2750 1850 2    50   Output ~ 0
-filterIn-
-Text HLabel 3650 2800 1    50   Output ~ 0
-filterOut+
-Text HLabel 3650 3400 3    50   Output ~ 0
-filterOut-
-Text HLabel 7400 3050 0    50   Input ~ 0
-filterOut+
-Text HLabel 7400 3150 0    50   Input ~ 0
-filterOut-
-Text HLabel 5000 5850 1    50   BiDi ~ 0
-SCL
-Text HLabel 8250 5250 0    50   BiDi ~ 0
-SCL
-Text HLabel 5000 5950 3    50   BiDi ~ 0
-SDA
-Text HLabel 8250 5150 0    50   BiDi ~ 0
-SDA
-Text HLabel 6450 5450 2    50   Output ~ 0
-CLK
-Text HLabel 8250 5350 0    50   Input ~ 0
-CLK
-Text HLabel 8250 5450 0    50   Output ~ 0
-PWDN
-Text HLabel 9850 5650 2    50   Output ~ 0
-Spam
-Text HLabel 9850 5150 2    50   Input ~ 0
-D1
-Text HLabel 9850 5250 2    50   Input ~ 0
-D3
-Text HLabel 9850 5350 2    50   Input ~ 0
-D5
-Text HLabel 9850 5450 2    50   Input ~ 0
-D7
-Text HLabel 9850 5550 2    50   Input ~ 0
-D9
-Text HLabel 9350 5650 0    50   Input ~ 0
-OR
-Text HLabel 9350 5550 0    50   Input ~ 0
-D8
-Text HLabel 9350 5450 0    50   Input ~ 0
-D6
-Text HLabel 9350 5350 0    50   Input ~ 0
-D4
-Text HLabel 9350 5250 0    50   Input ~ 0
-D2
-Text HLabel 9350 5150 0    50   Input ~ 0
-D0
-Text HLabel 9200 3300 2    50   Input ~ 0
-CLK
-Text HLabel 9200 3400 2    50   Input ~ 0
-PWDN
 Wire Wire Line
 	2750 1650 3350 1650
-Text HLabel 6150 2700 0    50   Input ~ 0
-Spam
-Text HLabel 9200 2200 2    50   Output ~ 0
-D9
-Text HLabel 9200 2000 2    50   Output ~ 0
-OR
-Text HLabel 9200 2300 2    50   Output ~ 0
-D8
-Text HLabel 9200 2400 2    50   Output ~ 0
-D7
-Text HLabel 9200 2500 2    50   Output ~ 0
-D6
-Text HLabel 9200 2600 2    50   Output ~ 0
-D5
-Text HLabel 9200 2700 2    50   Output ~ 0
-D4
-Text HLabel 9200 2800 2    50   Output ~ 0
-D3
-Text HLabel 9200 2900 2    50   Output ~ 0
-D2
-Text HLabel 9200 3000 2    50   Output ~ 0
-D1
-Text HLabel 9200 3100 2    50   Output ~ 0
-D0
 Connection ~ 7400 1950
 $Comp
 L power:+3.3VA #PWR?
@@ -1724,4 +1642,86 @@ F 4 "855-M20-9760642" H 9550 5350 50  0001 C CNN "Mouser"
 	1    9550 5350
 	1    0    0    -1  
 $EndComp
+Text Label 1400 2950 2    50   ~ 0
+filterIn+
+Text Label 1400 3250 2    50   ~ 0
+filterIn-
+Text Label 7400 3050 2    50   ~ 0
+filterOut+
+Text Label 7400 3150 2    50   ~ 0
+filterOut-
+Text Label 2750 1450 0    50   ~ 0
+filterIn+
+Text Label 2750 1850 0    50   ~ 0
+filterIn-
+Text Label 3650 2800 1    50   ~ 0
+filterOut+
+Text Label 3650 3400 3    50   ~ 0
+filterOut-
+Text Label 9200 3300 0    50   ~ 0
+CLK
+Text Label 8250 5250 2    50   ~ 0
+SCL
+Text Label 8250 5150 2    50   ~ 0
+SDA
+Text Label 6450 5450 0    50   ~ 0
+CLK
+Text Label 5050 5850 1    50   ~ 0
+SCL
+Text Label 5050 5950 3    50   ~ 0
+SDA
+Text Label 8250 5350 2    50   ~ 0
+CLK
+Text Label 9200 3400 0    50   ~ 0
+PWDN
+Text Label 8250 5450 2    50   ~ 0
+PWDN
+Text Label 6150 2700 2    50   ~ 0
+Spam
+Text Label 9850 5650 0    50   ~ 0
+Spam
+Text Label 9200 2000 0    50   ~ 0
+OR
+Text Label 9200 2200 0    50   ~ 0
+D9
+Text Label 9200 2300 0    50   ~ 0
+D8
+Text Label 9200 2400 0    50   ~ 0
+D7
+Text Label 9200 2500 0    50   ~ 0
+D6
+Text Label 9200 2600 0    50   ~ 0
+D5
+Text Label 9200 2700 0    50   ~ 0
+D4
+Text Label 9200 2800 0    50   ~ 0
+D3
+Text Label 9200 2900 0    50   ~ 0
+D2
+Text Label 9200 3000 0    50   ~ 0
+D1
+Text Label 9200 3100 0    50   ~ 0
+D0
+Text Label 9350 5650 2    50   ~ 0
+OR
+Text Label 9850 5550 0    50   ~ 0
+D9
+Text Label 9350 5550 2    50   ~ 0
+D8
+Text Label 9850 5450 0    50   ~ 0
+D7
+Text Label 9350 5450 2    50   ~ 0
+D6
+Text Label 9850 5350 0    50   ~ 0
+D5
+Text Label 9350 5350 2    50   ~ 0
+D4
+Text Label 9850 5250 0    50   ~ 0
+D3
+Text Label 9850 5150 0    50   ~ 0
+D1
+Text Label 9350 5150 2    50   ~ 0
+D0
+Text Label 9350 5250 2    50   ~ 0
+D2
 $EndSCHEMATC

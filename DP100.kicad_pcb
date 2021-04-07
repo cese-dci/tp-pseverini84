@@ -2568,8 +2568,8 @@
     )
   )
 
-  (gr_text DP100 (at 116.2 148.4) (layer F.SilkS)
-    (effects (font (size 2 2) (thickness 0.15)))
+  (gr_text HSADC100 (at 116.2 148.6) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.15)))
   )
   (gr_line (start 125 135.6) (end 125.8 134.8) (layer F.SilkS) (width 0.12))
   (gr_line (start 125.6 116.6) (end 125.6 116.8) (layer F.SilkS) (width 0.12))
