@@ -1724,4 +1724,37 @@ Text Label 9350 5150 2    50   ~ 0
 D0
 Text Label 9350 5250 2    50   ~ 0
 D2
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 607472D1
+P 950 6900
+F 0 "H1" H 1050 6946 50  0000 L CNN
+F 1 "MountingHole" H 1050 6855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 950 6900 50  0001 C CNN
+F 3 "~" H 950 6900 50  0001 C CNN
+	1    950  6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 6074792D
+P 950 7200
+F 0 "H2" H 1050 7246 50  0000 L CNN
+F 1 "MountingHole" H 1050 7155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 950 7200 50  0001 C CNN
+F 3 "~" H 950 7200 50  0001 C CNN
+	1    950  7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 60757A68
+P 950 7500
+F 0 "FID1" H 1035 7546 50  0000 L CNN
+F 1 "Fiducial" H 1035 7455 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 950 7500 50  0001 C CNN
+F 3 "~" H 950 7500 50  0001 C CNN
+	1    950  7500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
