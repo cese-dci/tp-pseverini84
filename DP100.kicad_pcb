@@ -10,6 +10,16 @@
   )
 
   (page A4)
+  (title_block
+    (title "High speed ADC breakout")
+    (date 2021-04-13)
+    (rev 1.0)
+    (comment 1 "Released under the Creative Commons Attribution Share-Alike 4.0 Licence")
+    (comment 2 https://creativecommons.org/license/by-sa/4.0/)
+    (comment 3 "Autor: Pablo Severini")
+    (comment 4 "Revisor: Francisci Timez")
+  )
+
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)
